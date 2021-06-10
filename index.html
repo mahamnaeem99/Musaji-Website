@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+ <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+ <link rel="stylesheet" href="css/owl.theme.green.css">
+
+
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+ <script>
+//   var topIMG = "./images/musajilogo.png";
+// var sclIMG = "./images/logo.png";
+
+// $('img[alt="Musaji Logo"]').attr("class", "musajilogo")
+
+// $(window).scroll(function() {
+//    var value = $(this).scroll();
+//    if (value > 10)
+//       $(".logo").attr("src", topIMG);
+//    else
+//       $(".logo").attr("src", sclIMG);
+// });
+
+$(function () { 
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 20) { 
+            $('.navbar .navbar-brand img').attr('src','./images/logo.png');
+        }
+        if ($(this).scrollTop() < 10) { 
+            $('.navbar .navbar-brand img').attr('src','./images/musajilogo.png');
+        }
+    })
+});
+ </script>
+   <!-- GetButton.io widget -->
+<script type="text/javascript">
+  (function () {
+      var options = {
+          whatsapp: "+92 300 0202388", // WhatsApp number
+          call: "+92 300 0202388", // Call phone number
+          call_to_action: "Message us", // Call to action
+          button_color: "#E74339", // Color of button
+          position: "right", // Position may be 'right' or 'left'
+          order: "whatsapp,call", // Order of buttons
+      };
+      var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+      s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+      var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+  })();
+</script>
+<!-- /GetButton.io widget -->
+
+</head>
+<body>
+  <!-- NAVBAR -->
+        <nav class="navbar navbar-default fixed-top navbar-expand-lg shadow-none p-md-3 navbar-light">
+        <a href="index.html" class="navbar-brand">
+        <img src="./images/musajilogo.png" class="logo" alt="Musaji Logo">
+       </a>
+       <button class="navbar-toggler" data-toggle="collapse" data-target="#mynavbar">
+            <span class="navbar-toggler-icon">
+
+            </span>
+      </button>
+     <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav mr-auto rr">
+        <li class="nav-item">
+            <a href="company.html" class="nav-link">The Company</a>
+          </li>
+         
+  
+        <li class="nav-item dropdown">
+          <a href="" class="nav-link active dropbtn" data-toggle="dropdown">
+            Products
+          </a>
+  
+          <div class="dropdown-menu">
+            <a href="microbiology.html" class="dropdown-item">Microbiology</a>
+            <a href="foodsafety.html" class="dropdown-item">Food Safety Solutions</a>
+            <a href="lifescience.html" class="dropdown-item">Life Sciences Research</a>
+            <a href="labchemicals.html" class="dropdown-item">Laboratory Chemicals</a>
+            <a href="labequipment.html" class="dropdown-item">Laboratory Equipment</a>
+            <a href="labglassware.html" class="dropdown-item">Laboratory Glassware</a>
+            <a href="labplastic.html" class="dropdown-item">Laboratory Plasticware</a>
+            <a href="rawmaterial.html" class="dropdown-item">Stains & Reagents</a>
+            <a href="labfiltration.html" class="dropdown-item">Laboratory Filtrations</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a href="" class="nav-link active dropbtn" data-toggle="dropdown">Support</a>
+          
+          <div class="dropdown-menu">
+            <a href="literature.html" class="dropdown-item">Literatures</a>
+            <a href="coa.html" class="dropdown-item">COA</a>
+            <a href="supportform.html" class="dropdown-item">Technical Support</a>
+            
+          </div>   
+        </li>
+
+          <li class="nav-item">
+            <a href="news.html" class="nav-link">News</a>
+            </li>
+            <li class="nav-item">
+              <a href="career.html" class="nav-link">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contacts</a>
+                </li>
+    </ul>
+
+  <div class="button">
+  <button class="btn shadow-none button example_a" type="button" data-toggle="modal" data-target="#sem-reg">
+    REQUEST FOR QUOTE </button>
+  </div>
+
+
+  </div>
+  </nav>
+
+  
+
+
+  <!-- <div class="head">
+    <h2 class="pro">
+       HOME
+     </h2>
+    
+    </div>
+      -->
+
+<div class="container">
+  <!-- The Modal -->
+  <div class="modal fade seminor-login-modal" data-backdrop="static" id="sem-reg">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" style="border: 3px solid lightgray; box-shadow: inset; background: linear-gradient(red,rgba(255,0,0,0.7));">
+        <!-- background-color: rgb(243, 240, 240) -->
+        <!-- Modal body -->
+        <!-- <div class="modal-body seminor-login-modal-body"  style="background-image: url(./images/rfq.png);"> -->
+          <div class="modal-body seminor-login-modal-body">
+          <!-- <h5 class="modal-title text-center rfq-head">Request For Quote</h5> -->
+          <button type="button" class="close" data-dismiss="modal">
+            <span class="i"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+          </button>
+         
+          <form class="form">
+            <div class="rfq-div">
+              <h5 class="rfq-heading">REQUEST FOR QUOTE</h5>
+             </div>
+            <input type="text" placeholder="Name" required>
+            <input type="text" placeholder="Email" required>
+            <input type="text" placeholder="Phone" required>
+            <input type="text" placeholder="Organization" required>
+            <input type="text" placeholder="City" required>
+            <input type="text" placeholder="Message" required>
+            <input type="submit" value="SUBMIT" class="submit-btn">
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+
+
+<div class="container-fluid carousel2">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner caro-img">
+    <div class="carousel-item active">
+      <div class="card">
+      <img class="d-block w-100" src="./images/microbiology.jpg" alt="First slide">
+     
+      <div class="card-img-overlay">
+      
+        <h1 class="card-title1">MICROBIOLOGY</h1>
+        <div class="img1">
+        <p class="card-text1">Discover microbiology solutions for diagnosis of infectious disease and detection of 
+          bacterial contamination in industrial applications. We are serving public health, clinical 
+          laboratories, food companies, environmental screening and pharmaceutical laboratories.</p>
+      </div>
+    </div>
+  </div>
+   
+    </div>
+    <div class="carousel-item">
+      <div class="card">
+      <img class="d-block w-100" src="./images/labware.jpg" alt="Second slide">
+      <div class="card-img-overlay">
+        
+        <h1 class="card-title2">LABWARE</h1>
+        <div class="img2">
+        <p class="card-text2">Set the standard for quality and superior performance while protecting your valuable
+           research with World's leading Labware brands including Corning, Axygen, Kartell and Pyrex.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card">
+      <img class="d-block w-100" src="./images/chemicals.jpg" alt="Second slide">
+      <div class="card-img-overlay">
+        
+        <h1 class="card-title3">CHEMICALS</h1>
+        <div class="img3">
+        <p class="card-text3">With a wide selection of World's leading Chemicals brands including Acros, Alfa Aesar, Daejung, Fisher, Scharlau, LGC and USP, we are committed to become your one-stop source for laboratory chemicals and life science research.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card">
+      <img class="d-block w-100" src="./images/equipment.jpg" alt="Second slide">
+      <div class="card-img-overlay">
+        
+        <h1 class="card-title4">LAB EQUIPMENT</h1>
+        <div class="img4">
+        <p class="card-text4">We provide the Smartest Laboratory Solutions you never have to think about. Our Laboratory Equipment gives you outstanding performance and let you perform your research efficiently.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card">
+      <img class="d-block w-100" src="./images/foodsafety.jpg" alt="Second slide">
+      <div class="card-img-overlay">
+        
+        <h1 class="card-title5">FOOD SAFETY</h1>
+        <div class="img5">
+        <p class="card-text5">Food quality and safety are two of the most challenging issues in the current regulatory environment. 
+          Our global brands maintain standards of food quality, safety, and authenticity that today's demanding consumers expect.
+        </p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card">
+      <img class="d-block w-100" src="./images/life sciences.jpg" alt="Third slide">
+      <div class="card-img-overlay">
+        <h1 class="card-title6">LIFE SCIENCES</h1>
+        <div class="img6">
+        <p class="card-text6">Our Life Sciences research products include innovative molecular-biology reagents, research grade chemicals and high quality cell and tissue culture grade plastic consumables designed to deliver reproducibility and performance for every step of your workflow you need to achieve your goals.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<br><br>
+
+
+<!-- PRODUCT CATEGORIES -->
+<h3 class="mb-5 font-weight-bold procar">PRODUCT CATEGORIES</h3>
+<hr class="hrfeatured">
+<section class="blog_section">
+  <div class="container">
+      <div class="blog_content">
+          <div class="owl-carousel OwlCarousel1 owl-theme">
+              <div class="blog_item" onclick="location.href='microbiology.html';">
+                <br>
+                  <div class="blog_image">
+                      <img class="img-fluid" src="./images/CATEGORY/microbiology.png">
+                   
+                  </div>
+                  <div class="blog_details">
+                      <div class="blog_title">
+                          <h5 style="text-align: center;"><a href="microbiology.html">MICROBIOLOGY</a></h5>
+                      </div>
+                    
+                  </div>
+              </div>    
+              <div class="blog_item" onclick="location.href='foodsafety.html';">
+                <br>
+                <div class="blog_image">
+                    <img class="img-fluid" src="./images/CATEGORY/foods.png">
+
+                </div>
+                <div class="blog_details">
+                    <div class="blog_title">
+                      <h5 style="text-align: center;"><a href="foodsafety.html">FOOD SAFETY SOLUTIONS</a></h5>
+                    </div>
+                  
+                </div>
+            </div>  
+           
+           
+            <div class="blog_item" onclick="location.href='labglassware.html';">
+              <br>
+              <div class="blog_image">
+                  <img class="img-fluid" src="./images/CATEGORY/labware.png">
+              </div>
+              <div class="blog_details">
+                  <div class="blog_title">
+                    <h5 style="text-align: center;"><a href="labglassware.html">LABWARE</a></h5>
+                  </div>
+              </div>
+          </div>
+             
+
+              
+              <div class="blog_item" onclick="location.href='lifescience.html';">
+                <br>
+                  <div class="blog_image">
+                      <img class="img-fluid" src="./images/CATEGORY/life science.png" alt="images not found">
+  
+                  </div>
+                  <div class="blog_details">
+                      <div class="blog_title">
+                        <h5 style="text-align: center;"><a href="lifescience.html">LIFE SCIENCES RESEARCH</a></h5>
+                      </div>
+                    
+                  </div>
+              </div>    
+              <div class="blog_item" onclick="location.href='rawmaterial.html';">
+                <br>
+                <div class="blog_image">
+                    <img class="img-fluid" src="./images/CATEGORY/raw.png">
+
+                </div>
+                <div class="blog_details">
+                    <div class="blog_title">
+                      <h5 style="text-align: center;"><a href="rawmaterial.html">STAINS & REAGENTS</a></h5>
+                    </div>
+                  
+                </div>
+            </div>    
+            <div class="blog_item" onclick="location.href='labfiltration.html';">
+              <br>
+              <div class="blog_image">
+                  <img class="img-fluid" src="./images/CATEGORY/filtration.png">
+              </div>
+              <div class="blog_details">
+                  <div class="blog_title">
+                    <h5 style="text-align: center;"><a href="labfiltration.html">FILTRATION</a></h5>
+                  </div>
+                
+              </div>
+          </div>                        
+              <div class="blog_item" onclick="location.href='labchemicals.html';">
+                <br>
+                  <div class="blog_image">
+                      <img class="img-fluid" src="./images/CATEGORY/chemical.png" alt="images not found">
+  
+                  </div>
+                  <div class="blog_details">
+                      <div class="blog_title">
+                        <h5 style="text-align: center;"><a href="labchemicals.html">LABORATORY CHEMICALS</a></h5>
+                      </div>
+                    
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+<div class="container ourPro" >
+  <div class="row ourPro">
+    <div class="col-lg-9">
+      <h3 class="our-pro font-weight-bold">FEATURED PRODUCTS</h3>
+      <hr class="our-prohr">
+      <br>
+
+      <div class="slider">
+      
+          
+        <img src="./images/chemicals.png" onclick="location.href='contact.html';" />
+      
+     
+        <img src="./images/filtration.png" onclick="location.href='contact.html';" />
+        
+        <img src="./images/sensi.png" onclick="location.href='contact.html';" />
+        <img src="./images/signal blood culture.png" onclick="location.href='contact.html';" />
+       
+    </div>
+    </div>
+
+
+
+    <div class="col-lg-3">
+      <h3 class="whats">WHAT'S NEW</h3>
+      <div class="news">
+        <hr class="whatsnewhr">
+        <div class="panel-body1">
+          <a href="" class="news-link">
+          <h5 style="color: black;font-size:16px;">In-Depth Comparison Between HEPA and ULPA Filters in Biosafety Cabinets</h5>
+          <p>
+            <i class="fa fa-calendar-o calendar" style="color: red;"></i>
+            <small style="color: black;">2021-03-23</small>
+          </p>
+        </a>
+        </div>
+
+        <div class="panel-body2">
+          <a href="" class="news-link">
+          <h5 style="color: black; font-size:16px;">In-Depth Comparison Between HEPA and ULPA Filters in Biosafety Cabinets</h5>
+          <p>
+            <i class="fa fa-calendar-o calendar" style="color: red;"></i>
+            <small style="color: black;">2021-03-23</small>
+          </p>
+        </a>
+        </div>
+         <a href="">
+           <button class="read">Read More</button>
+         </a>
+      </div>
+    </div>  
+</div>
+</div>
+
+
+<br>
+<br>
+
+
+<div class="container">
+  <img src="images/experts.jpg" class="img-fluid">
+</div>
+
+
+
+<div class="container carousel-wrap">
+  <div class="owl-carousel multiCarousel">
+    <div class="item"><img src="./images/Brand logos/thermo.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/oxoid.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/remel.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/lonza.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/medical_wire.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/romer.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/mbl.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/cpc.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/alfa.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/daejung.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/scharlaun.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/acros.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/fisher.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/usp.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/lcg.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/kartell.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/pyrex.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/chm.jpg" class="chm"></div>
+    <div class="item"><img src="./images/Brand logos/sterlin.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/corning.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/axy.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/falcon.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/triobas.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/mmm.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/esco.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/meiling.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/pginst.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/rocker.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/dwb.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/optika.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/biotool.jpg"></div>
+    <div class="item"><img src="./images/Brand logos/trek.jpg"></div>
+
+  </div>
+</div>
+
+
+
+
+
+<footer class="footer spad">
+
+  <div class="container">
+  <div class="row">
+  <div class="col-lg-5">
+  <div class="footer__about">
+   <div class="footer__about__logo">
+  <a href="./index.html"><img src="img/logo.png" alt=""></a>
+  </div>
+           <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FMUSAJIZ%2F&tabs=timeline&
+           width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+           width="340" height="450" style="border:none;overflow:hidden" scrolling="no" frameborder="0" 
+           allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+           ></iframe>
+           
+  </div>
+  
+  </div>
+  <div class="col-lg-3">
+    <br>
+  <div class="footer__widget">
+  
+  <h6>Menu</h6>
+  <ul>
+    <li><a href="company.html">The Company</a></li>
+    <li><a href="">Products</a></li>
+    <li><a href="">Support</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="career.html">Careers</a></li>
+    <li><a href="contact.html">Contacts</a></li>
+  </ul>
+  </div>
+  </div>
+  <div class="col-lg-4 col-md-12">
+    <br>
+  <div class="footer__widget">
+  <h6>Join Our Newsletter Now</h6>
+  <p>Get E-mail updates about our latest shop and special offers.</p>
+  <form action="#">
+  <input type="text" placeholder="Enter your mail">
+  <button type="submit" class="site-btn">Subscribe</button>
+  </form>
+  <div class="footer__widget__social">
+  <a href="#"><i class="fa fa-facebook" style="color: red;"></i></a>
+  <a href="#"><i class="fa fa-instagram" style="color: red;"></i></a>
+  <a href="#"><i class="fa fa-twitter" style="color: red;"></i></a>
+ 
+  </div>
+  </div>
+  </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-lg-12">
+    <div class="footer__copyright">
+    <div class="footer__copyright__text"><p>
+    Copyright &copy; 2021
+    All Rights reserved |
+    </p></div>
+    
+    </div>
+    </div>
+    </div>
+    </div>
+  
+  </footer> 
+
+ 
+  
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./js/app.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js'></script>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.js"></script>
+
+        <script>
+        AOS.init({
+            offset: 300,
+            duration: 1000,
+        });
+        </script>
+          
+</body>
+</html>
+
+
+
+
+
+
